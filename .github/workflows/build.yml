@@ -60,6 +60,19 @@ jobs:
           cat build.md >> "$GITHUB_OUTPUT"
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
           cp -f build.md build.tmp
+          
+    
+    - name: Upload files to Telegram
+      uses: xz-dev/TelegramFileUploader@v1
+      with:
+        to-who: '@RVX_BUILDS'
+        message: 'Here are your files!'
+        files: |
+        ./build/*
+      env:
+        API_ID: ${{ secrets.API_ID }}
+        API_HASH: ${{ secrets.API_HASH }}
+        BOT_TOKEN: ${{ secrets.TG_TOKEN }}
 
       - name: Upload modules to release
         uses: svenstaro/upload-release-action@v2
