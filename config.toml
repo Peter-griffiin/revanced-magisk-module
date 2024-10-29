@@ -78,3 +78,9 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
 # [IconPackStudio]
 # enabled = false
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
+
+[Piko-twitter]
+patches-source = "crimera/piko"
+integrations-source = "crimera/revanced-integrations"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+apkmirror-dpi = "120-640dpi"
