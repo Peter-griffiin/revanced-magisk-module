@@ -245,7 +245,6 @@ get_patch_last_supported_ver() {
 	if [ -z "$pcount" ]; then abort "unreachable: '$pcount'"; fi
 	grep -F "($pcount patch" <<<"$op" | sed 's/ (.* patch.*//' | get_highest_ver || return 1
 }
-}
 
 isoneof() {
 	local i=$1 v
