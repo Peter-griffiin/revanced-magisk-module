@@ -533,9 +533,9 @@ build_rv() {
 		if [ -n "$microg_patch" ]; then
 			patched_apk="${TEMP_DIR}/${app_name_l}-${rv_brand_f}-${version_f}-${arch_f}-${build_mode}.apk"
 			if [ "$build_mode" = apk ]; then
+				patcher_args+=("-e \"${microg_patch}\"")
 			elif [ "$build_mode" = module ]; then
 				patcher_args+=("-d \"${microg_patch}\"")
-				patcher_args+=("-e \"${microg_patch}\"")
 			fi
 		else
 			patched_apk="${TEMP_DIR}/${app_name_l}-${rv_brand_f}-${version_f}-${arch_f}.apk"
