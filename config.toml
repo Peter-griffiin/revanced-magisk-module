@@ -60,5 +60,5 @@ apkmirror-dpi = "120-640dpi"
 
 [Google photos]
 build-mode = "both"
-arch = "arm64-v8a"
+# arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos"
