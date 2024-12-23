@@ -7,19 +7,22 @@ parallel-jobs = 1
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-enabled = false
+enabled = true
 build-mode = "both"
 excluded-patches = ""
 included-patches = ""
 version = "auto"
+included-patches = "'MaterialYou'"
+excluded-patches = "'Theme' 'Amoled'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 # uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [Music]
-enabled = false
+enabled = true
 build-mode = "both"
 arch = "both"
+excluded-patches = "'Amoled'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 # uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
